@@ -2,15 +2,17 @@ package com.company.introductoryalgorithms;
 
 import com.company.util.InputReader;
 
+import java.io.IOException;
+
 /**
  * Handles taking input and passing to solver method
  */
 public class MissingNumber {
-    public static void main ( String[] args ) {
-        final InputReader reader = new InputReader(System.in);
-        final int n = reader.readInt();
+    public static void main ( String[] args ) throws IOException {
+        final InputReader reader = new InputReader();
+        final int n = reader.nextInt();
         int[] arr = new int[n];
-        for ( int i = 0; i < n - 1; i++ ) arr[i] = reader.readInt();
+        for ( int i = 0; i < n - 1; i++ ) arr[i] = reader.nextInt();
         System.out.println(new MissingNumberSolver().solve(arr));
     }
 }

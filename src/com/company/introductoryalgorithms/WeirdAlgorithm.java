@@ -1,14 +1,17 @@
 package com.company.introductoryalgorithms;
 
+
 import com.company.util.InputReader;
+
+import java.io.IOException;
 
 /**
  * Handles taking input and passing to solver method
  */
 public class WeirdAlgorithm {
-    public static void main(String[] args) {
-        final InputReader reader = new InputReader(System.in);
-        final int n = reader.readInt();
+    public static void main(String[] args) throws IOException {
+        final InputReader reader = new InputReader();
+        final int n = reader.nextInt();
         new WeirdAlgorithmSolver().solve(n);
     }
 }
