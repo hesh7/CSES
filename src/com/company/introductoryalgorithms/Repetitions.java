@@ -3,7 +3,6 @@ package com.company.introductoryalgorithms;
 import com.company.util.InputReader;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 /**
  * Handles taking input and passing to solver method
